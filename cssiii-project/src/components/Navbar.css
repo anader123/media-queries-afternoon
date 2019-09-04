@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Chilanka&display=swap');
+
+.navbar {
+    width: 100vw; 
+    height: 70px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.navbar-title {
+    color: #F6CD42;
+    margin-left: 45px;
+    font-family: Chilanka; 
+}
+
+.navbar-icon {
+    display: none;
+    background: #F6CD42;
+    padding: 15px;
+    border-radius: 5px;
+    margin-right: 45px;
+}
+
+.navbar-menu {
+    margin-right: 45px;
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar-menu > li {
+    margin: 0 10px;
+}
+
+.navbar-menu > li:hover {
+    color: rgb(255, 255, 55);
+}
+
+.menu {
+    width: 100vw;
+    height: 25vh;
+    list-style-type: none;
+    position: fixed; 
+    top: -250px;
+    transition: 500ms;
+    background: rgb(78, 78, 78);
+}
+
+.menu > li {
+    margin: 18px 0;
+}
+
+.menu > li:hover {
+    color: rgb(255, 255, 55);
+}
+
+.slide {
+    top: 50px;
+}
+
+.desk-img {
+    height: 60vh;
+    width: 100vw;
+    margin-bottom: 700px;
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+    .navbar-title {
+        margin-left: 100px;
+    }
+    .navbar-menu {
+        margin-right: 100px;
+    }
+}
+
+
+/* Display Media Icon */
+@media (max-width: 1000px) {
+    .navbar-menu {
+        display: none
+    }
+    .navbar-icon {
+        display: flex;
+    }
+    .navbar-title {
+        font-size: 20px;
+    }
+    .navbar {
+        background: rgb(78, 78, 78);
+    }
+    .menu > li {
+        margin-left: 55px;
+    }
+}
+
+@media (max-width: 760px) {
+    .navbar-title {
+        margin: 125px;
+    }
+    .navbar-icon {
+        display: flex;
+    }
+    .desk-img {
+        height: 35vh;
+    }
+    .menu > li {
+        margin-left: 85px;
+    }
+}
